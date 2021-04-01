@@ -1,0 +1,39 @@
+@import "Accueil.sass";   
+
+/* Principals elements of the page */
+body
+{
+    font-family: 'Roboto', sans-serif;
+    margin-left: -0.5%;
+    margin-right: -0.5%;
+}
+/* Header */
+.logo
+{
+    text-align: center;
+}
+.map
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    margin-top: 0.5em;
+}
+.input
+{
+    background-color: #F2F2F2;
+    border: none;
+    font-size: 0.85em;
+    padding: 10px 0px 10px 80px;
+}
+
+.icon
+{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    margin-right: -4.5em;
+    margin-left: 4em;
+}
