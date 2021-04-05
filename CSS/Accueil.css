@@ -25,6 +25,7 @@ body
     background-color: rgb(234 234 234);
     border: none;
     font-size: 0.95em;
+    color: black;
     padding: 10px 0px 10px 130px;
     width: 102.5%;
     margin-top: 1em;
@@ -91,11 +92,16 @@ nav h2, section h2
 {
     background-color: rgb(246 246 246);
     border: none;
+    color: black;
     font-size: 0.8em;
     padding: 20px 0px 20px 70px;
     border-radius: 1.5em; 
     margin-left: 2.5em;
     width: 100%;
+}
+.select-p:hover, .compose-p:hover, .store-p:hover
+{
+background-color: rgb(245 237 255 );
 }
 .first, .second, .third
 {
@@ -109,7 +115,6 @@ section h2
 {
     padding-top: 2em;
 }
-
 section
 {
     margin-top: 3em;
@@ -172,8 +177,21 @@ section
     position: absolute;
     right: 10%;
     width: 20px;
-    height: 24px;
-    margin-top: 13em;
+    height: 20px;
+    margin-top: 13.2em;
+}
+.menilmontant-heart2, .charonne-heart2, .cite-rouge-heart2, .folie-mericourt-heart2
+{
+    position: absolute;
+    right: 10%;
+    width: 20px;
+    height: 20px;
+    margin-top: 13.2em;
+    opacity: 0;
+}
+.menilmontant-heart2:hover, .charonne-heart2:hover, .cite-rouge-heart2:hover, .folie-mericourt-heart2:hover
+{
+    opacity: 1;
 }
 .charonne, .cite-rouge, .folie-mericourt
 {
