@@ -93,10 +93,6 @@ nav h2, section h2 {
   opacity: 0;
 }
 
-.select-img2:hover, .compose-img2:hover, .store-img2:hover {
-  opacity: 1;
-}
-
 .select-p, .compose-p, .store-p {
   background-color: #f6f6f6;
   border: none;
@@ -110,6 +106,10 @@ nav h2, section h2 {
 
 .select-p:hover, .compose-p:hover, .store-p:hover {
   background: #f5edff;
+}
+
+.select-p:hover + .select-img2, .compose-p:hover + .compose-img2, .store-p:hover + .store-img2 {
+  opacity: 1;
 }
 
 .first, .second, .third {
