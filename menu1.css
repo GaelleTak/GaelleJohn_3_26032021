@@ -191,7 +191,6 @@ footer {
         opacity: 1;
     }
 }
-
 @keyframes desert-load{
     0%{
         transform: translateY(-20px);
