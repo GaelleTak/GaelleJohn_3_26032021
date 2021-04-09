@@ -1,0 +1,254 @@
+/* Principals elements of the page */
+body {
+    font-family: "Roboto", sans-serif;
+    margin-left: 0%;
+  }
+  
+  /* Header */
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: -3em;
+  }
+.back{
+    width: 15px;
+    height: 15px;
+    margin-top: 0.5em;  
+}
+.logo-img {
+   margin-left: -5em;
+} 
+.menilmontant-img{
+    width: 102.2%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Section */
+section{
+    background-color: #f6f6f6;
+    margin-top: -3em;
+    padding-bottom: 15em;
+    width: 100%;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    position: absolute;
+}
+.main-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.heart{
+    width: 15px;
+    height: 15px;
+    margin-top: 1.7em;
+}
+.title{
+    font-family: "Shrikhand", cursive;
+    font-size: 1.25em;
+}
+.starter, .dishes, .desert {
+  .starter-card1, .starter-card2, .starter-card3, .starter-card4, .dish-card1, .dish-card2, .dish-card3, .desert-card1, .desert-card2, .desert-card3  {
+        cursor: pointer;
+        background-color: white;
+        position: relative;
+        border-radius: 12px;
+        box-shadow: 2px 3px 10px rgba(0,0,0,0.1);
+        margin: 0em 1em 1.5em 1em;
+        display: flex;
+        width: 90%;
+    &:hover .check {
+      width: 25%;
+      > .check-circle {
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+        animation: rotation 1s linear;
+      }
+    }
+  }
+    .start-choice1, .start-choice2, .start-choice3, .start-choice4, .dish-choice1, .dish-choice2, .dish-choice3, .desert-choice1, .desert-choice2, .desert-choice3 {
+        width: 100%;
+        padding: 0 10px;
+        display: grid;
+        grid-template-rows: 30px;
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+        "text1 ."
+        "text2 price";
+        p {
+            display:block;
+            white-space: nowrap;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            &:nth-child(1) {
+                overflow: visible;
+                grid-area: text1;
+                font-weight: 500;
+                font-size: 0.9em;
+            }
+            &:nth-child(2) {
+                grid-area: text2;
+                font-weight:300;
+                font-size: 0.9em;
+            }
+            &:nth-child(3) {
+                grid-area: price;
+                overflow: visible;
+                display: flex;
+                justify-content: flex-end;
+                font-weight:500;
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+.check {
+    transition: width 1s linear;
+    width: 0;
+    right: 0;
+    background-color: #99E2D0;
+    color: white;
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+    transform-origin: right center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .check-circle {
+        opacity: 0;
+        z-index: 1;
+    }
+}
+
+@keyframes rotation {
+    from {
+        z-index:1;
+        transform: rotate(0);
+    } 50% {
+        transform: rotate(180deg);
+    } to {
+      z-index:1;
+        transform: rotate(360deg);
+    }
+}
+
+.starter-title, .dishes-title, .desert-title {
+    font-weight:300;
+    font-size: 0.9em;
+    margin-left: 1.5em;
+    margin-bottom: 2em;
+}
+.span1, .span2, .span3{
+    border-bottom: 2px solid #99E2D0;
+    padding-bottom: 0.5em;
+}
+.starter{
+    animation: starter-load 2s ease-in 300ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+.dishes{
+    animation: dishes-load 4s ease-in 300ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+.desert{
+    animation: desert-load 6s ease-in 300ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+@keyframes starter-load{
+    0%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes dishes-load{
+    0%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes desert-load{
+    0%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.order {
+    position: absolute;
+    left: 30%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-radius: 3em;
+    text-decoration-line: none; 
+    font-size: 0.75em;
+    color: white;
+    padding: 1em 3em 1em 3em;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: #353535;
+    margin-top: 80em;
+    padding-top: 0.5em;
+    margin-bottom: -1.5em;
+    height: 200px;
+    width: 100%;
+    position:absolute;
+  }
+  
+  footer .title {
+    font-family: "Shrikhand", cursive;
+    margin-left: 1.5em;
+    font-size: 1.15em;
+    color: white;
+  }
+  
+  .ustensils-p, .partner-p, .legal, .contact-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+    font-size: 0.8em;
+    margin-left: 3em;
+    color: white;
+  }
+  
+  .ustensils, .partner {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    margin-left: 1em;
+  }
+  
+  .partner {
+    margin-top: 2em;
+  }
+
