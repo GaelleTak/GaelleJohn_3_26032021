@@ -66,6 +66,7 @@ section {
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
   margin: 0em 1em 1.5em 1em;
   display: flex;
+  width: 90%;
 }
 .starter .starter-card1:hover .check, .starter .starter-card2:hover .check, .starter .starter-card3:hover .check, .starter .dish-card1:hover .check, .starter .dish-card2:hover .check, .starter .dish-card3:hover .check, .starter .desert-card1:hover .check, .starter .desert-card2:hover .check, .starter .desert-card3:hover .check, .dishes .starter-card1:hover .check, .dishes .starter-card2:hover .check, .dishes .starter-card3:hover .check, .dishes .dish-card1:hover .check, .dishes .dish-card2:hover .check, .dishes .dish-card3:hover .check, .dishes .desert-card1:hover .check, .dishes .desert-card2:hover .check, .dishes .desert-card3:hover .check, .desert .starter-card1:hover .check, .desert .starter-card2:hover .check, .desert .starter-card3:hover .check, .desert .dish-card1:hover .check, .desert .dish-card2:hover .check, .desert .dish-card3:hover .check, .desert .desert-card1:hover .check, .desert .desert-card2:hover .check, .desert .desert-card3:hover .check {
   width: 25%;
@@ -86,8 +87,12 @@ section {
 }
 .starter .start-choice1 p, .starter .start-choice2 p, .starter .start-choice3 p, .starter .dish-choice1 p, .starter .dish-choice2 p, .starter .dish-choice3 p, .starter .desert-choice1 p, .starter .desert-choice2 p, .starter .desert-choice3 p, .dishes .start-choice1 p, .dishes .start-choice2 p, .dishes .start-choice3 p, .dishes .dish-choice1 p, .dishes .dish-choice2 p, .dishes .dish-choice3 p, .dishes .desert-choice1 p, .dishes .desert-choice2 p, .dishes .desert-choice3 p, .desert .start-choice1 p, .desert .start-choice2 p, .desert .start-choice3 p, .desert .dish-choice1 p, .desert .dish-choice2 p, .desert .dish-choice3 p, .desert .desert-choice1 p, .desert .desert-choice2 p, .desert .desert-choice3 p {
   display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .starter .start-choice1 p:nth-child(1), .starter .start-choice2 p:nth-child(1), .starter .start-choice3 p:nth-child(1), .starter .dish-choice1 p:nth-child(1), .starter .dish-choice2 p:nth-child(1), .starter .dish-choice3 p:nth-child(1), .starter .desert-choice1 p:nth-child(1), .starter .desert-choice2 p:nth-child(1), .starter .desert-choice3 p:nth-child(1), .dishes .start-choice1 p:nth-child(1), .dishes .start-choice2 p:nth-child(1), .dishes .start-choice3 p:nth-child(1), .dishes .dish-choice1 p:nth-child(1), .dishes .dish-choice2 p:nth-child(1), .dishes .dish-choice3 p:nth-child(1), .dishes .desert-choice1 p:nth-child(1), .dishes .desert-choice2 p:nth-child(1), .dishes .desert-choice3 p:nth-child(1), .desert .start-choice1 p:nth-child(1), .desert .start-choice2 p:nth-child(1), .desert .start-choice3 p:nth-child(1), .desert .dish-choice1 p:nth-child(1), .desert .dish-choice2 p:nth-child(1), .desert .dish-choice3 p:nth-child(1), .desert .desert-choice1 p:nth-child(1), .desert .desert-choice2 p:nth-child(1), .desert .desert-choice3 p:nth-child(1) {
+  overflow: visible;
   grid-area: text1;
   font-weight: 500;
   font-size: 0.9em;
