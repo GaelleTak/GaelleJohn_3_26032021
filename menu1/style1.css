@@ -58,10 +58,89 @@ section {
   font-size: 1.25em;
 }
 
+.starter .starter-card1, .starter .starter-card2, .starter .starter-card3 {
+  cursor: pointer;
+  background-color: white;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+  margin: 0em 1em 1.5em 1em;
+  display: flex;
+}
+.starter .starter-card1:hover .check1, .starter .starter-card1:hover .check2, .starter .starter-card1:hover .check3, .starter .starter-card2:hover .check1, .starter .starter-card2:hover .check2, .starter .starter-card2:hover .check3, .starter .starter-card3:hover .check1, .starter .starter-card3:hover .check2, .starter .starter-card3:hover .check3 {
+  width: 25%;
+}
+.starter .starter-card1:hover .check1 > .check-circle1, .starter .starter-card1:hover .check1 .check-circle2, .starter .starter-card1:hover .check1 .check-circle3, .starter .starter-card1:hover .check2 > .check-circle1, .starter .starter-card1:hover .check2 .check-circle2, .starter .starter-card1:hover .check2 .check-circle3, .starter .starter-card1:hover .check3 > .check-circle1, .starter .starter-card1:hover .check3 .check-circle2, .starter .starter-card1:hover .check3 .check-circle3, .starter .starter-card2:hover .check1 > .check-circle1, .starter .starter-card2:hover .check1 .check-circle2, .starter .starter-card2:hover .check1 .check-circle3, .starter .starter-card2:hover .check2 > .check-circle1, .starter .starter-card2:hover .check2 .check-circle2, .starter .starter-card2:hover .check2 .check-circle3, .starter .starter-card2:hover .check3 > .check-circle1, .starter .starter-card2:hover .check3 .check-circle2, .starter .starter-card2:hover .check3 .check-circle3, .starter .starter-card3:hover .check1 > .check-circle1, .starter .starter-card3:hover .check1 .check-circle2, .starter .starter-card3:hover .check1 .check-circle3, .starter .starter-card3:hover .check2 > .check-circle1, .starter .starter-card3:hover .check2 .check-circle2, .starter .starter-card3:hover .check2 .check-circle3, .starter .starter-card3:hover .check3 > .check-circle1, .starter .starter-card3:hover .check3 .check-circle2, .starter .starter-card3:hover .check3 .check-circle3 {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  animation: rotation 1s linear;
+}
+.starter .start-choice1, .starter .start-choice2, .starter .start-choice3 {
+  width: 100%;
+  padding: 0 10px;
+  display: grid;
+  grid-template-rows: 30px;
+  grid-template-columns: auto auto;
+  grid-template-areas: "text1 ." "text2 price";
+}
+.starter .start-choice1 p, .starter .start-choice2 p, .starter .start-choice3 p {
+  display: block;
+}
+.starter .start-choice1 p:nth-child(1), .starter .start-choice2 p:nth-child(1), .starter .start-choice3 p:nth-child(1) {
+  grid-area: text1;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+.starter .start-choice1 p:nth-child(2), .starter .start-choice2 p:nth-child(2), .starter .start-choice3 p:nth-child(2) {
+  grid-area: text2;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+.starter .start-choice1 p:nth-child(3), .starter .start-choice2 p:nth-child(3), .starter .start-choice3 p:nth-child(3) {
+  grid-area: price;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.check1, .check2, .check3 {
+  transition: width 1s linear;
+  width: 0;
+  right: 0;
+  background-color: #99E2D0;
+  color: white;
+  border-radius: 0 12px 12px 0;
+  cursor: pointer;
+  justify-content: center;
+  transform-origin: right center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check1 .check-circle1, .check1 .check-circle2, .check1 .check-circle3, .check2 .check-circle1, .check2 .check-circle2, .check2 .check-circle3, .check3 .check-circle1, .check3 .check-circle2, .check3 .check-circle3 {
+  opacity: 0;
+  z-index: 1;
+}
+
+@keyframes rotation {
+  from {
+    z-index: 1;
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  to {
+    z-index: 1;
+    transform: rotate(360deg);
+  }
+}
 .starter-title, .dishes-title, .desert-title {
   font-weight: 300;
   font-size: 0.9em;
-  margin-left: 2em;
+  margin-left: 1.5em;
   margin-bottom: 2em;
 }
 

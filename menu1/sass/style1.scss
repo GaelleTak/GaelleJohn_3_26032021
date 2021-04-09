@@ -51,11 +51,93 @@ section{
     font-family: "Shrikhand", cursive;
     font-size: 1.25em;
 }
+.starter {
+  .starter-card1, .starter-card2, .starter-card3 {
+        cursor: pointer;
+        background-color: white;
+        position: relative;
+        border-radius: 12px;
+        box-shadow: 2px 3px 10px rgba(0,0,0,0.1);
+        margin: 0em 1em 1.5em 1em;
+        display: flex;
+    &:hover .check1, &:hover .check2, &:hover .check3 {
+      width: 25%;
+      > .check-circle1, .check-circle2, .check-circle3 {
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+        animation: rotation 1s linear;
+      }
+    }
+    
+  }
+    .start-choice1, .start-choice2, .start-choice3 {
+        width: 100%;
+        padding: 0 10px;
+        display: grid;
+        grid-template-rows: 30px;
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+        "text1 ."
+        "text2 price";
+        p {
+            display: block;
+            &:nth-child(1) {
+                grid-area: text1;
+                font-weight: 500;
+                font-size: 0.9em;
+            }
+            &:nth-child(2) {
+                grid-area: text2;
+                font-weight:300;
+                font-size: 0.9em;
+            }
+            &:nth-child(3) {
+                grid-area: price;
+                display: flex;
+                justify-content: flex-end;
+                font-weight:500;
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+.check1, .check2, .check3 {
+    transition: width 1s linear;
+    width: 0;
+    right: 0;
+    background-color: #99E2D0;
+    color: white;
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+    justify-content: center;
+    transform-origin: right center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .check-circle1, .check-circle2, .check-circle3 {
+        opacity: 0;
+        z-index: 1;
+    }
+}
+
+@keyframes rotation {
+    from {
+        z-index:1;
+        transform: rotate(0);
+    } 50% {
+        transform: rotate(180deg);
+    } to {
+      z-index:1;
+        transform: rotate(360deg);
+    }
+}
 
 .starter-title, .dishes-title, .desert-title {
     font-weight:300;
     font-size: 0.9em;
-    margin-left: 2em;
+    margin-left: 1.5em;
     margin-bottom: 2em;
 }
 .span1, .span2, .span3{
