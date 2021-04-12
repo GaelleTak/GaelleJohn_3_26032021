@@ -299,7 +299,7 @@ footer .title {
   margin-top: 2em;
 }
 
-@media only screen and (min-width: 550px) and (max-width: 1000px) {
+@media only screen and (min-width: 550px) and (max-width: 1400px) {
   .input {
     background-color: #f5edff;
     border-radius: 3em;
@@ -316,7 +316,7 @@ footer .title {
 
   .purpose {
     margin-top: 2em;
-    width: 100.8%;
+    width: 100.6%;
   }
 
   .select, .compose, .store {
@@ -326,14 +326,23 @@ footer .title {
     width: 50%;
   }
 
+  footer {
+    width: 100.6%;
+  }
+
   section {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 100.8%;
+    width: 100.6%;
   }
 
+  section h2 {
+    margin-top: -1em;
+  }
+}
+@media only screen and (min-width: 550px) and (max-width: 1000px) {
   .menilmontant, .charonne, .cite-rouge, .folie-mericourt {
     width: 200px;
     height: 200px;
@@ -438,13 +447,110 @@ footer .title {
     left: 35%;
     top: -31.9em;
   }
-
-  section h2 {
-    margin-top: -1em;
+}
+@media only screen and (min-width: 1001px) and (max-width: 1400px) {
+  .menilmontant, .charonne, .cite-rouge, .folie-mericourt {
+    width: 400px;
+    height: 200px;
+    margin-top: 4em;
   }
 
-  footer {
-    width: 100.8%;
+  .menilmontant {
+    margin-left: -8em;
+  }
+
+  .menilmontant-img, .charonne-img, .cite-rouge-img, .folie-mericourt-img {
+    width: 400px;
+    height: 125px;
+  }
+
+  .menilmontant-title {
+    position: relative;
+    margin-top: -1.5em;
+    left: -32%;
+  }
+
+  .menilmontant-place {
+    left: 1.5%;
+    top: 50.5%;
+  }
+
+  .charonne-title {
+    position: relative;
+    left: -8.5em;
+    bottom: 15.5em;
+  }
+
+  .charonne-place {
+    position: relative;
+    left: -41%;
+    margin-top: -17em;
+  }
+
+  .cite-rouge-title {
+    position: relative;
+    left: -36%;
+    margin-top: 0.5em;
+  }
+
+  .cite-rouge-place {
+    position: relative;
+    left: -40%;
+    margin-top: 0.5em;
+  }
+
+  .folie-mericourt-title {
+    position: relative;
+    margin-left: -21em;
+    margin-top: 0.5em;
+  }
+
+  .folie-mericourt-place {
+    position: relative;
+    left: -36%;
+    margin-top: 0.5em;
+  }
+
+  .menilmontant-new, .charonne-new {
+    position: relative;
+    right: -40%;
+    top: -61%;
+  }
+
+  .menilmontant-heart {
+    position: relative;
+    top: -15em;
+    margin-left: 105%;
+  }
+
+  .charonne-heart {
+    position: relative;
+    top: -17.25em;
+    margin-left: 104%;
+  }
+
+  .cite-rouge-heart, .folie-mericourt-heart {
+    position: relative;
+    top: -17.5em;
+    margin-left: 106%;
+  }
+
+  .menilmontant-heart2 {
+    position: relative;
+    top: -29.45em;
+    margin-left: 105%;
+  }
+
+  .charonne-heart2 {
+    position: relative;
+    left: 42%;
+    top: -31.7em;
+  }
+
+  .cite-rouge-heart2, .folie-mericourt-heart2 {
+    position: relative;
+    left: 43%;
+    top: -31.9em;
   }
 }
 
