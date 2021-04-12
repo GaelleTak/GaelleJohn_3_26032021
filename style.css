@@ -78,6 +78,8 @@ body {
   padding: 10px 0px 10px 130px;
   width: 102.5%;
   margin-top: 1em;
+  position: relative;
+  padding-left: 35%;
 }
 
 .icon {
@@ -107,9 +109,9 @@ body {
 }
 
 .explore {
-  position: absolute;
-  left: 27%;
-  margin: 0;
+  display: block;
+  margin: auto;
+  margin-top: 3em;
   border-radius: 3em;
   font-size: 0.75em;
   color: white;
@@ -226,7 +228,7 @@ section {
   margin-top: 17.5em;
 }
 
-.menilmontant-new, .charonne-new, .cite-rouge-new, .folie-mericourt-new {
+.menilmontant-new, .charonne-new {
   position: absolute;
   right: 10%;
   width: 60px;
@@ -295,6 +297,155 @@ footer .title {
 
 .partner {
   margin-top: 2em;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 1000px) {
+  .input {
+    background-color: #f5edff;
+    border-radius: 3em;
+    width: 40%;
+    padding-left: 10%;
+    margin-left: -60%;
+  }
+
+  .icon {
+    position: relative;
+    left: -55%;
+    margin-top: 1em;
+  }
+
+  .purpose {
+    margin-top: 2em;
+    width: 100.8%;
+  }
+
+  .select, .compose, .store {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100.8%;
+  }
+
+  .menilmontant, .charonne, .cite-rouge, .folie-mericourt {
+    width: 200px;
+    height: 200px;
+    margin-top: 4em;
+  }
+
+  .menilmontant {
+    margin-left: -8em;
+  }
+
+  .menilmontant-img, .charonne-img, .cite-rouge-img, .folie-mericourt-img {
+    width: 200px;
+    height: 125px;
+  }
+
+  .menilmontant-title {
+    position: relative;
+    margin-top: -1.5em;
+    left: -15%;
+  }
+
+  .charonne-title {
+    position: relative;
+    left: -2em;
+    bottom: 15.5em;
+  }
+
+  .charonne-place {
+    position: relative;
+    left: -32%;
+    margin-top: -17em;
+  }
+
+  .cite-rouge-title {
+    position: relative;
+    margin-left: -7.5em;
+    margin-top: 0.5em;
+  }
+
+  .folie-mericourt-title {
+    position: relative;
+    margin-left: -6em;
+    margin-top: 0.5em;
+  }
+
+  .menilmontant-place {
+    left: 2%;
+    bottom: 32.5%;
+    top: 60.5%;
+  }
+
+  .cite-rouge-place {
+    position: relative;
+    left: -29%;
+    margin-top: 0.5em;
+  }
+
+  .folie-mericourt-place {
+    position: relative;
+    left: -24%;
+    margin-top: 0.5em;
+  }
+
+  .menilmontant-new, .charonne-new {
+    position: relative;
+    right: -30%;
+    top: -65%;
+  }
+
+  .menilmontant-heart {
+    position: relative;
+    top: -15em;
+    margin-left: 95%;
+  }
+
+  .menilmontant-heart2 {
+    position: relative;
+    top: -29.45em;
+    margin-left: 95%;
+  }
+
+  .cite-rouge-heart, .folie-mericourt-heart {
+    position: relative;
+    top: -17.5em;
+    margin-left: 90%;
+  }
+
+  .charonne-heart {
+    position: relative;
+    top: -17.25em;
+    margin-left: 90%;
+  }
+
+  .charonne-heart2 {
+    position: relative;
+    left: 35%;
+    top: -31.7em;
+  }
+
+  .cite-rouge-heart2, .folie-mericourt-heart2 {
+    position: relative;
+    left: 35%;
+    top: -31.9em;
+  }
+
+  section h2 {
+    margin-top: -1em;
+  }
+
+  footer {
+    width: 100.8%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
