@@ -11,17 +11,18 @@ body {
   justify-content: space-around;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-left: -3em;
 }
 
 .back {
   width: 15px;
   height: 15px;
   margin-top: 0.5em;
+  margin-left: 1.5em;
 }
 
 .logo-img {
-  margin-left: -5em;
+  display: block;
+  margin: auto;
 }
 
 .cite-rouge-img {
@@ -256,6 +257,112 @@ footer .title {
 
 .partner {
   margin-top: 2em;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 1400px) {
+  .cite-rouge-img {
+    width: 100.8%;
+  }
+
+  .main-title {
+    display: unset;
+  }
+
+  .back {
+    width: 25px;
+    height: 25px;
+  }
+
+  .title {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .heart {
+    display: block;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+  }
+
+  .starter .starter-card1:hover .check, .starter .starter-card2:hover .check, .starter .starter-card3:hover .check, .starter .dish-card1:hover .check, .starter .dish-card2:hover .check, .starter .dish-card3:hover .check, .starter .desert-card1:hover .check, .starter .desert-card2:hover .check, .starter .desert-card3:hover .check, .dishes .starter-card1:hover .check, .dishes .starter-card2:hover .check, .dishes .starter-card3:hover .check, .dishes .dish-card1:hover .check, .dishes .dish-card2:hover .check, .dishes .dish-card3:hover .check, .dishes .desert-card1:hover .check, .dishes .desert-card2:hover .check, .dishes .desert-card3:hover .check, .desert .starter-card1:hover .check, .desert .starter-card2:hover .check, .desert .starter-card3:hover .check, .desert .dish-card1:hover .check, .desert .dish-card2:hover .check, .desert .dish-card3:hover .check, .desert .desert-card1:hover .check, .desert .desert-card2:hover .check, .desert .desert-card3:hover .check {
+    width: 10%;
+  }
+
+  .order {
+    position: relative;
+    left: 45%;
+    bottom: -4em;
+  }
+}
+@media only screen and (min-width: 550px) and (max-width: 1000px) {
+  .starter, .dishes, .desert {
+    margin-left: 1.5em;
+  }
+
+  .ustensils-p, .partner-p, .legal, .contact-link {
+    align-items: center;
+  }
+
+  .ustensils, .partner {
+    left: 35%;
+  }
+
+  footer {
+    margin-top: 80em;
+  }
+}
+@media only screen and (min-width: 1001px) and (max-width: 1400px) {
+  .starter-title, .dishes-title, .desert-title {
+    font-size: 2em;
+    margin-left: 0.5em;
+  }
+
+  .starter-title, .desert-title {
+    padding-right: 25em;
+  }
+
+  .dishes-title {
+    padding-right: 27em;
+  }
+
+  .starter .starter-card1, .starter .starter-card2, .starter .starter-card3, .starter .dish-card1, .starter .dish-card2, .starter .dish-card3, .starter .desert-card1, .starter .desert-card2, .starter .desert-card3, .dishes .starter-card1, .dishes .starter-card2, .dishes .starter-card3, .dishes .dish-card1, .dishes .dish-card2, .dishes .dish-card3, .dishes .desert-card1, .dishes .desert-card2, .dishes .desert-card3, .desert .starter-card1, .desert .starter-card2, .desert .starter-card3, .desert .dish-card1, .desert .dish-card2, .desert .dish-card3, .desert .desert-card1, .desert .desert-card2, .desert .desert-card3 {
+    width: 30%;
+  }
+  .starter .starter-card1:hover .check, .starter .starter-card2:hover .check, .starter .starter-card3:hover .check, .starter .dish-card1:hover .check, .starter .dish-card2:hover .check, .starter .dish-card3:hover .check, .starter .desert-card1:hover .check, .starter .desert-card2:hover .check, .starter .desert-card3:hover .check, .dishes .starter-card1:hover .check, .dishes .starter-card2:hover .check, .dishes .starter-card3:hover .check, .dishes .dish-card1:hover .check, .dishes .dish-card2:hover .check, .dishes .dish-card3:hover .check, .dishes .desert-card1:hover .check, .dishes .desert-card2:hover .check, .dishes .desert-card3:hover .check, .desert .starter-card1:hover .check, .desert .starter-card2:hover .check, .desert .starter-card3:hover .check, .desert .dish-card1:hover .check, .desert .dish-card2:hover .check, .desert .dish-card3:hover .check, .desert .desert-card1:hover .check, .desert .desert-card2:hover .check, .desert .desert-card3:hover .check {
+    width: 25%;
+  }
+
+  .starter, .dishes, .desert {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  footer {
+    margin-top: 60em;
+    padding-bottom: 4em;
+  }
+
+  footer .title {
+    font-size: 2em;
+  }
+
+  .ustensils-p, .partner-p, .legal, .contact-link {
+    align-items: center;
+    font-size: 1em;
+  }
+
+  .ustensils, .partner {
+    width: 20px;
+    height: 20px;
+    left: 40%;
+  }
+
+  .partner {
+    margin-top: 2em;
+  }
 }
 
 /*# sourceMappingURL=style3.css.map */
