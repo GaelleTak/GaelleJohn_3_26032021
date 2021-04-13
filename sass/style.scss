@@ -4,27 +4,64 @@ $backgroundhover: #f5edff;
 
 /*Loader*/
 
-.overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    animation: bye 5s;
-    opacity: 1;
-  }
-  .spinner {
-    margin-top:50%;
-    margin-left: 37.5%;
-    width: 75px;
-    height: 75px;
-    border-width: 2px;
-    border-color: #9356DC;
-    border-top-color: #fff;
-    animation: spin 1s infinite linear;
-    border-radius: 100%;
-    border-style: solid;
-  }
+.body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+.section{
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  animation: bye 2s linear ;
+  opacity: 0;
+}
+@keyframes bye{
+  0%{ opacity: 1; ;}
+  100%{ opacity: 0;}
+}
+.loader{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.loader-quart{
+  border-radius: 50px;
+  border: 6px solid rgba(255, 255, 255, 0.4);
+}
+.loader-quart:after{
+  content: '';
+  position: absolute;
+  top: -6px; left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: #FFF;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin{
+  0%{ transform: rotate(0deg) ;}
+  100%{ transform: rotate(360deg);}
+}
+
+@-webkit-keyframes spin{
+  0%{ -webkit-transform: rotate(0deg) ; transform: rotate(0deg) ;}
+  100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}
+@keyframes spin{
+  0%{ -webkit-transform: rotate(0deg) ; transform: rotate(0deg) ;}
+  100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}
   .bloc-page{
     animation: bloc-load 1s ease-in 2s;
     animation-fill-mode: forwards;
@@ -32,17 +69,6 @@ $backgroundhover: #f5edff;
     opacity: 0;
   }
   
-  @keyframes spin {
-    100% {
-        transform: rotate(360deg);
-    }
-  }
-  @keyframes bye{
-  
-    100%{
-        opacity: 0;
-    }
-  }
   @keyframes bloc-load{
     0%{
         transform: translateY(-20px);
