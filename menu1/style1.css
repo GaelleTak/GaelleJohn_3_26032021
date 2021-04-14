@@ -35,7 +35,7 @@ body {
 section {
   background-color: #f6f6f6;
   margin-top: -3em;
-  padding-bottom: 15em;
+  padding-bottom: 4em;
   width: 100%;
   border-top-left-radius: 2em;
   border-top-right-radius: 2em;
@@ -44,19 +44,35 @@ section {
 
 .main-title {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
 
 .heart {
+  position: absolute;
   width: 20px;
   height: 20px;
   margin-top: 1.7em;
+  right: 2.65em;
+}
+
+.heart2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 1.7em;
+  right: 2.65em;
+  opacity: 0;
+}
+
+.heart2:hover {
+  opacity: 1;
 }
 
 .title {
   font-family: "Shrikhand", cursive;
   font-size: 1.25em;
+  margin-left: -3.5em;
 }
 
 .starter .starter-card1, .starter .starter-card2, .starter .starter-card3, .starter .dish-card1, .starter .dish-card2, .starter .dish-card3, .starter .desert-card1, .starter .desert-card2, .starter .desert-card3, .dishes .starter-card1, .dishes .starter-card2, .dishes .starter-card3, .dishes .dish-card1, .dishes .dish-card2, .dishes .dish-card3, .dishes .desert-card1, .dishes .desert-card2, .dishes .desert-card3, .desert .starter-card1, .desert .starter-card2, .desert .starter-card3, .desert .dish-card1, .desert .dish-card2, .desert .dish-card3, .desert .desert-card1, .desert .desert-card2, .desert .desert-card3 {
@@ -208,23 +224,29 @@ section {
   }
 }
 .order {
-  position: absolute;
-  left: 30%;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  display: block;
+  margin: auto;
   border-radius: 3em;
   text-decoration-line: none;
   font-size: 0.75em;
   color: white;
   padding: 1em 3em 1em 3em;
+  width: 70px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border: none;
+}
+
+.order:hover {
+  background: linear-gradient(to bottom right, #FF79DA44, #9356DC44);
+  box-shadow: 0px 2px 5px grey;
 }
 
 /* Footer */
 footer {
   background-color: #353535;
-  margin-top: 76em;
+  margin-top: 73em;
   padding-top: 0.5em;
   margin-bottom: -1.5em;
   height: 200px;
@@ -260,13 +282,9 @@ footer .title {
   margin-top: 2em;
 }
 
-@media only screen and (min-width: 550px) and (max-width: 1400px) {
+@media only screen and (min-width: 550px) {
   .menilmontant-img {
     width: 100.8%;
-  }
-
-  .main-title {
-    display: unset;
   }
 
   .back {
@@ -276,24 +294,27 @@ footer .title {
 
   .title {
     font-size: 2em;
-    text-align: center;
+    margin-left: 0em;
   }
 
   .heart {
-    display: block;
-    margin: auto;
     width: 30px;
     height: 30px;
+    position: relative;
+    left: 1em;
+    top: -3em;
+  }
+
+  .heart2 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 1em;
+    top: -4.85em;
   }
 
   .starter .starter-card1:hover .check, .starter .starter-card2:hover .check, .starter .starter-card3:hover .check, .starter .dish-card1:hover .check, .starter .dish-card2:hover .check, .starter .dish-card3:hover .check, .starter .desert-card1:hover .check, .starter .desert-card2:hover .check, .starter .desert-card3:hover .check, .dishes .starter-card1:hover .check, .dishes .starter-card2:hover .check, .dishes .starter-card3:hover .check, .dishes .dish-card1:hover .check, .dishes .dish-card2:hover .check, .dishes .dish-card3:hover .check, .dishes .desert-card1:hover .check, .dishes .desert-card2:hover .check, .dishes .desert-card3:hover .check, .desert .starter-card1:hover .check, .desert .starter-card2:hover .check, .desert .starter-card3:hover .check, .desert .dish-card1:hover .check, .desert .dish-card2:hover .check, .desert .dish-card3:hover .check, .desert .desert-card1:hover .check, .desert .desert-card2:hover .check, .desert .desert-card3:hover .check {
     width: 10%;
-  }
-
-  .order {
-    position: relative;
-    left: 45%;
-    bottom: -4em;
   }
 }
 @media only screen and (min-width: 550px) and (max-width: 1000px) {
@@ -310,10 +331,10 @@ footer .title {
   }
 
   footer {
-    margin-top: 80em;
+    margin-top: 78em;
   }
 }
-@media only screen and (min-width: 1001px) and (max-width: 1400px) {
+@media only screen and (min-width: 1001px) {
   .starter-title, .dishes-title, .desert-title {
     font-size: 2em;
     margin-left: 0.5em;
@@ -342,7 +363,7 @@ footer .title {
   }
 
   footer {
-    margin-top: 60em;
+    margin-top: 55em;
     padding-bottom: 4em;
   }
 

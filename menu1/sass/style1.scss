@@ -32,7 +32,7 @@ body {
 section{
     background-color: #f6f6f6;
     margin-top: -3em;
-    padding-bottom: 15em;
+    padding-bottom: 4em;
     width: 100%;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
@@ -40,17 +40,31 @@ section{
 }
 .main-title{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 .heart{
+    position: absolute;
     width: 20px;
     height: 20px;
     margin-top: 1.7em;
+    right: 2.65em;
+}
+.heart2{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 1.7em;
+    right: 2.65em;
+    opacity: 0;
+}
+.heart2:hover{
+  opacity: 1;
 }
 .title{
     font-family: "Shrikhand", cursive;
     font-size: 1.25em;
+    margin-left: -3.5em;
 }
 .starter, .dishes, .desert {
   .starter-card1, .starter-card2, .starter-card3, .dish-card1, .dish-card2, .dish-card3, .desert-card1, .desert-card2, .desert-card3  {
@@ -200,25 +214,28 @@ section{
         opacity: 1;
     }
 }
-
 .order {
-    position: absolute;
-    left: 30%;
-    margin-top: 2em;
-    margin-bottom: 1em;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    display: block;
+    margin: auto;
     border-radius: 3em;
     text-decoration-line: none; 
     font-size: 0.75em;
     color: white;
     padding: 1em 3em 1em 3em;
+    width: 70px;
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     border: none;
 }
-
+.order:hover{
+    background: linear-gradient(to bottom right, #FF79DA44, #9356DC44);
+    box-shadow: 0px 2px 5px grey;
+}
 /* Footer */
 footer {
     background-color: #353535;
-    margin-top: 76em;
+    margin-top: 73em;
     padding-top: 0.5em;
     margin-bottom: -1.5em;
     height: 200px;
@@ -253,27 +270,31 @@ footer {
   .partner {
     margin-top: 2em;
   }
-@media only screen and (min-width: 550px) and (max-width: 1400px) {
+@media only screen and (min-width: 550px) {
     .menilmontant-img{
         width: 100.8%;
-    }
-        
-    .main-title{
-        display: unset;
-    }   
+    } 
     .back{
         width: 25px;
         height: 25px;
     }
     .title{
         font-size: 2em;
-        text-align: center;
+        margin-left: 0em;
     }
     .heart{
-        display: block;
-        margin: auto;
         width: 30px;
-        height: 30px;  
+        height: 30px;
+        position: relative;
+        left: 1em;
+        top: -3em;
+    }
+    .heart2  {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        left: 1em;
+        top: -4.85em;
     }
     .starter, .dishes, .desert {
         .starter-card1, .starter-card2, .starter-card3, .dish-card1, .dish-card2, .dish-card3, .desert-card1, .desert-card2, .desert-card3  {
@@ -282,11 +303,6 @@ footer {
             }
         }
     }    
-    .order {
-        position: relative;
-        left: 45%;
-        bottom: -4em;
-    }
 }
 
 @media only screen and (min-width: 550px) and (max-width: 1000px) {
@@ -301,10 +317,10 @@ footer {
         left: 35%;
     }
     footer{
-        margin-top: 80em;
+        margin-top: 78em;
     }
 }
-@media only screen and (min-width: 1001px) and (max-width: 1400px) {
+@media only screen and (min-width: 1001px) {
     .starter-title, .dishes-title, .desert-title {
         font-size: 2em;
         margin-left: 0.5em;
@@ -331,7 +347,7 @@ footer {
         flex-wrap: wrap;
     }
     footer{
-        margin-top: 60em;
+        margin-top: 55em;
         padding-bottom: 4em;
     }
     footer .title {
