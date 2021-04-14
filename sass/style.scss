@@ -7,8 +7,9 @@ $backgroundhover: #f5edff;
 .body{
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 20px;
   color: #fff;
   text-align: center;
 }
@@ -19,19 +20,21 @@ $backgroundhover: #f5edff;
   height: 100%;
   left: 0;
   top: 0;
-  animation: bye 2s linear ;
+  animation: bye 3s linear ;
   opacity: 0;
 }
 @keyframes bye{
-  0%{ opacity: 1; ;}
+  0%{ opacity: 1;}
   100%{ opacity: 0;}
 }
 .loader{
   width: 50px;
   height: 50px;
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -25px; /* Cette valeur doit être la moitié négative de la valeur du width */
+  margin-top: -100px;
 }
 .loader-quart{
   border-radius: 50px;
@@ -63,7 +66,7 @@ $backgroundhover: #f5edff;
   100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg);}
 }
   .bloc-page{
-    animation: bloc-load 1s ease-in 2s;
+    animation: bloc-load 3s ease-in 2s;
     animation-fill-mode: forwards;
     transform: translateY(-20px);
     opacity: 0;
@@ -77,7 +80,6 @@ $backgroundhover: #f5edff;
     100%{
         transform: translateY(0px);
         opacity: 1;
-        background-color: #fff;
     }
   }
   /* Principals elements of the page */
@@ -455,6 +457,15 @@ $backgroundhover: #f5edff;
     left: 35%;
     top: -31.9em;
   }
+  footer .title {
+    text-align: center;
+  }
+  .ustensils-p, .partner-p, .legal, .contact-link {
+    align-items: center;
+  }
+  .ustensils, .partner {
+      left: 35%;
+  }
 }
 @media only screen and (min-width : 1001px) and (max-width : 1400px)
 {  
@@ -546,5 +557,23 @@ $backgroundhover: #f5edff;
     left: 43%;
     top: -31.9em;
   }
-  
+  footer{
+    padding-bottom: 4em;
+  }
+  footer .title {
+    font-size: 2em;
+    text-align: center;
+  }
+  .ustensils-p, .partner-p, .legal, .contact-link {
+    align-items: center;
+    font-size: 1em;
+  }
+  .ustensils, .partner {
+    width: 20px;
+    height: 20px;
+    left: 40%;
+  }
+  .partner {
+    margin-top: 2em;
+  }
 }
