@@ -15,8 +15,13 @@ $backgroundhover: #f5edff;
   height: 100%;
   left: 0;
   top: 0;
-  animation: bye 3s linear ;
+  -webkit-animation: bye 3s linear ;
+          animation: bye 3s linear ;
   opacity: 0;
+}
+@-webkit-keyframes bye{
+  0%{ opacity: 1;}
+  100%{ opacity: 0;}
 }
 @keyframes bye{
   0%{ opacity: 1;}
@@ -32,13 +37,14 @@ $backgroundhover: #f5edff;
   width: 300px;
   margin-left: -6em;
   margin-top: -6em;
+  -webkit-padding-before: 400%;
 }
 .loader{
   width: 50px;
   height: 50px;
   position:absolute;
   left: 50%;
-  top: 30%;
+  top: 35%;
   margin-left: -25px; /* Cette valeur doit être la moitié négative de la valeur du width */
   margin-top: -100px;
 }
@@ -64,18 +70,27 @@ $backgroundhover: #f5edff;
 }
 
 @-webkit-keyframes spin{
-  0%{ -webkit-transform: rotate(0deg) ; transform: rotate(0deg) ;}
-  100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg);}
-}
-@keyframes spin{
-  0%{ -webkit-transform: rotate(0deg) ; transform: rotate(0deg) ;}
-  100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+  0%{ transform: rotate(0deg) ;}
+  100%{ transform: rotate(360deg);}
 }
   .bloc-page{
-    animation: bloc-load 3s ease-in 2s;
-    animation-fill-mode: forwards;
+    -webkit-animation: bloc-load 3s ease-in 2s;
+            animation: bloc-load 3s ease-in 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
     transform: translateY(-20px);
     opacity: 0;
+  }
+  
+  @-webkit-keyframes bloc-load{
+    0%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
   }
   
   @keyframes bloc-load{
@@ -154,7 +169,8 @@ $backgroundhover: #f5edff;
     display: block;
     margin: auto;
     border-radius: 3em;
-    text-decoration-line: none; 
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none; 
     font-size: 0.75em;
     color: white;
     padding: 1em 1em 1em 2em;
@@ -254,7 +270,8 @@ $backgroundhover: #f5edff;
     height: 200px;
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   
   .menilmontant-title, .charonne-title, .cite-rouge-title, .folie-mericourt-title {
