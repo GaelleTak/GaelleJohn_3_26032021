@@ -27,7 +27,7 @@ body {
 
 .menilmontant-img, .charonne-img, .cite-rouge-img, .folie-mericourt-img {
   width: 102.2%;
-  height: 220px;
+  height: 250px;
   object-fit: cover;
 }
 
@@ -313,7 +313,7 @@ footer .title {
     height: 30px;
     position: relative;
     left: 1em;
-    top: -3em;
+    top: -1.65em;
   }
 
   .heart2 {
@@ -321,7 +321,7 @@ footer .title {
     height: 30px;
     position: relative;
     left: 1em;
-    top: -4.85em;
+    top: -3.5em;
   }
 
   .starter .starter-card1:hover .check, .starter .starter-card2:hover .check, .starter .starter-card3:hover .check, .starter .starter-card4:hover .check, .starter .dish-card1:hover .check, .starter .dish-card2:hover .check, .starter .dish-card3:hover .check, .starter .desert-card1:hover .check, .starter .desert-card2:hover .check, .starter .desert-card3:hover .check, .dishes .starter-card1:hover .check, .dishes .starter-card2:hover .check, .dishes .starter-card3:hover .check, .dishes .starter-card4:hover .check, .dishes .dish-card1:hover .check, .dishes .dish-card2:hover .check, .dishes .dish-card3:hover .check, .dishes .desert-card1:hover .check, .dishes .desert-card2:hover .check, .dishes .desert-card3:hover .check, .desert .starter-card1:hover .check, .desert .starter-card2:hover .check, .desert .starter-card3:hover .check, .desert .starter-card4:hover .check, .desert .dish-card1:hover .check, .desert .dish-card2:hover .check, .desert .dish-card3:hover .check, .desert .desert-card1:hover .check, .desert .desert-card2:hover .check, .desert .desert-card3:hover .check {
@@ -429,11 +429,13 @@ footer .title {
 }
 @media only screen and (min-width: 2000px) {
   .starter-title, .desert-title {
-    padding-right: 45em;
+    padding-right: 57em;
+    -webkit-padding-end: 57em;
   }
 
   .dishes-title {
-    padding-right: 40em;
+    padding-right: 59em;
+    -webkit-padding-end: 59em;
   }
 }
 

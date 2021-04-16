@@ -24,7 +24,7 @@ body {
 } 
 .menilmontant-img, .charonne-img, .cite-rouge-img, .folie-mericourt-img{
     width: 102.2%;
-    height: 220px;
+    height: 250px;
     object-fit: cover;
 }
 /* Section */
@@ -296,14 +296,14 @@ footer .title {
         height: 30px;
         position: relative;
         left: 1em;
-        top: -3em;
+        top: -1.65em;
     }
     .heart2  {
         width: 30px;
         height: 30px;
         position: relative;
         left: 1em;
-        top: -4.85em;
+        top: -3.5em;
     }
     .starter, .dishes, .desert {
         .starter-card1, .starter-card2, .starter-card3, .starter-card4, .dish-card1, .dish-card2, .dish-card3, .desert-card1, .desert-card2, .desert-card3  {
@@ -403,9 +403,12 @@ footer .title {
 }
 @media only screen and (min-width: 2000px) {
     .starter-title, .desert-title {
-        padding-right: 45em;
+        padding-right: 57em;
+        -webkit-padding-end: 57em;
+
     }
     .dishes-title {
-        padding-right: 40em;
+        padding-right: 59em;
+        -webkit-padding-end: 59em;
     }
 }
