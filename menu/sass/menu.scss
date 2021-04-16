@@ -24,7 +24,7 @@ body {
 } 
 .menilmontant-img, .charonne-img, .cite-rouge-img, .folie-mericourt-img{
     width: 102.2%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
 }
 /* Section */
@@ -46,14 +46,14 @@ section{
     position: absolute;
     width: 20px;
     height: 20px;
-    margin-top: 1.7em;
+    top: 2.1em;
     right: 2.65em;
 }
 .heart2{
     position: absolute;
     width: 20px;
     height: 20px;
-    top: 1.7em;
+    top: 2.1em;
     right: 2.65em;
     opacity: 0;
 }
@@ -62,8 +62,8 @@ section{
 }
 .title{
     font-family: "Shrikhand", cursive;
-    font-size: 1.25em;
-    margin-left: -3.5em;
+    font-size: 1.5em;
+    margin-left: -3.8em;
 }
 .starter, .dishes, .desert {
   .starter-card1, .starter-card2, .starter-card3, .starter-card4, .dish-card1, .dish-card2, .dish-card3, .desert-card1, .desert-card2, .desert-card3  {

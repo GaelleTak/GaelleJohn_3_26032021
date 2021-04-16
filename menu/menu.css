@@ -27,7 +27,7 @@ body {
 
 .menilmontant-img, .charonne-img, .cite-rouge-img, .folie-mericourt-img {
   width: 102.2%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
 }
 
@@ -52,7 +52,7 @@ section {
   position: absolute;
   width: 20px;
   height: 20px;
-  margin-top: 1.7em;
+  top: 2.1em;
   right: 2.65em;
 }
 
@@ -60,7 +60,7 @@ section {
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 1.7em;
+  top: 2.1em;
   right: 2.65em;
   opacity: 0;
 }
@@ -71,8 +71,8 @@ section {
 
 .title {
   font-family: "Shrikhand", cursive;
-  font-size: 1.25em;
-  margin-left: -3.5em;
+  font-size: 1.5em;
+  margin-left: -3.8em;
 }
 
 .starter .starter-card1, .starter .starter-card2, .starter .starter-card3, .starter .starter-card4, .starter .dish-card1, .starter .dish-card2, .starter .dish-card3, .starter .desert-card1, .starter .desert-card2, .starter .desert-card3, .dishes .starter-card1, .dishes .starter-card2, .dishes .starter-card3, .dishes .starter-card4, .dishes .dish-card1, .dishes .dish-card2, .dishes .dish-card3, .dishes .desert-card1, .dishes .desert-card2, .dishes .desert-card3, .desert .starter-card1, .desert .starter-card2, .desert .starter-card3, .desert .starter-card4, .desert .dish-card1, .desert .dish-card2, .desert .dish-card3, .desert .desert-card1, .desert .desert-card2, .desert .desert-card3 {
@@ -429,10 +429,11 @@ footer .title {
 }
 @media only screen and (min-width: 2000px) {
   .starter-title, .desert-title {
-    padding-right: 57em;
+    padding-right: 45em;
   }
+
   .dishes-title {
-    padding-right: 59em;
+    padding-right: 40em;
   }
 }
 

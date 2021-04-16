@@ -108,13 +108,11 @@ $backgroundhover: #f5edff;
     font-family: "Roboto", sans-serif;
     margin-left: 0%;
   }
-  
   /* Header */
   .logo {
     text-align: center;
     margin-top: 1em;
   }
-  
   .map {
     display: flex;
     flex-direction: row-reverse;
@@ -122,7 +120,6 @@ $backgroundhover: #f5edff;
     justify-content: center;
     margin-right: -0.5em;
   }
-  
   .input {
     background-color: $backgroundinput;
     border: none;
@@ -134,8 +131,8 @@ $backgroundhover: #f5edff;
     margin-top: 1em;
     position: relative;
     padding-left: 35%;
+    box-shadow: 0px -3px 5px grey;
   }
-  
   .icon {
     width: 15px;
     height: 15px;
@@ -143,26 +140,22 @@ $backgroundhover: #f5edff;
     left:25%;
     top: 3%;
   }
-  
   .purpose {
     background-color: $backgroundmain;
     padding-top: 2em;
     padding-bottom: 3em;
     width: 102.2%;
   }
-  
   .purpose h2 {
     font-size: 1.3em;
     text-align: center;
   }
-  
   .purpose p {
     text-align: center;
     font-weight: 100;
     font-size: 0.95em;
     margin-bottom: 3em;
   }
-  
   .explore {
     font-family: "Roboto", sans-serif;
     position: relative;
@@ -186,7 +179,6 @@ $backgroundhover: #f5edff;
     font-size: 1.3em;
     margin-left: 1em;
   }
-  
   .select, .compose, .store {
     display: flex;
     flex-direction: row;
@@ -194,14 +186,12 @@ $backgroundhover: #f5edff;
     margin-top: 2em;
     padding-right: 1em;
   }
-  
   .select-img, .compose-img, .store-img {
     width: 15px;
     height: 15px;
     position: absolute;
     margin-left: 4em;
   }
-  
   .select-img2, .compose-img2, .store-img2 {
     width: 15px;
     height: 15px;
@@ -214,8 +204,8 @@ $backgroundhover: #f5edff;
     border: none;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 0.8em;
-    padding: 20px 0px 20px 70px;
+    font-size: 0.90em;
+    padding: 25px 0px 20px 70px;
     border-radius: 1.5em;
     margin-left: 2.5em;
     width: 100%;
@@ -233,12 +223,10 @@ $backgroundhover: #f5edff;
     position: absolute;
     margin-left: 1em;
   }
-  
   /* Section */
   section h2 {
     padding-top: 2em;
   }
-  
   section {
     margin-top: 3em;
     padding-bottom: 3em;
@@ -246,12 +234,10 @@ $backgroundhover: #f5edff;
     height: auto;
     width: 102.2%;
   }
-  
   .restaurant1-link, .restaurant2-link, .restaurant3-link, .restaurant4-link {
     color: black;
     text-decoration: none;
   }
-  
   .menilmontant, .charonne, .cite-rouge, .folie-mericourt {
     display: flex;
     flex-direction: column;
@@ -264,7 +250,6 @@ $backgroundhover: #f5edff;
     margin-left: 1em;
     border-radius: 0.5em;
   }
-  
   .menilmontant-img, .charonne-img, .cite-rouge-img, .folie-mericourt-img {
     width: 100%;
     height: 200px;
@@ -273,14 +258,12 @@ $backgroundhover: #f5edff;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  
   .menilmontant-title, .charonne-title, .cite-rouge-title, .folie-mericourt-title {
     position: absolute;
     left: 8%;
     font-size: 0.95em;
     margin-top: 14em;
   }
-  
   .menilmontant-place, .charonne-place, .cite-rouge-place, .folie-mericourt-place {
     position: absolute;
     left: 8%;
@@ -288,7 +271,6 @@ $backgroundhover: #f5edff;
     font-size: 0.85em;
     margin-top: 17.5em;
   }
-  
   .menilmontant-new, .charonne-new{
     position: absolute;
     background-color:#99E2D0;
@@ -302,7 +284,6 @@ $backgroundhover: #f5edff;
     padding-top: 0.25em;
     padding-bottom: 0.25em;
   }
-  
   .menilmontant-heart, .charonne-heart, .cite-rouge-heart, .folie-mericourt-heart {
     position: absolute;
     right: 10%;
@@ -310,7 +291,6 @@ $backgroundhover: #f5edff;
     height: 20px;
     margin-top: 13.2em;
   }
-  
   .menilmontant-heart2, .charonne-heart2, .cite-rouge-heart2, .folie-mericourt-heart2 {
     position: absolute;
     right: 10%;
@@ -322,11 +302,9 @@ $backgroundhover: #f5edff;
   .menilmontant-heart2:hover, .charonne-heart2:hover, .cite-rouge-heart2:hover, .folie-mericourt-heart2:hover {
     opacity: 1;
   }
-  
   .charonne, .cite-rouge, .folie-mericourt {
     margin-top: 2em;
   }
-  
   /* Footer */
   footer {
     background-color: #353535;
@@ -336,14 +314,12 @@ $backgroundhover: #f5edff;
     height: 200px;
     width: 102.2%;
   }
-  
   footer .title {
     font-family: "Shrikhand", cursive;
     margin-left: 1.5em;
     font-size: 1.15em;
     color: white;
   }
-  
   .ustensils-p, .partner-p, .legal, .contact-link {
     display: flex;
     flex-direction: column;
@@ -353,19 +329,15 @@ $backgroundhover: #f5edff;
     margin-left: 3em;
     color: white;
   }
-  
   .ustensils, .partner {
     width: 12px;
     height: 12px;
     position: absolute;
     margin-left: 1em;
   }
-  
   .partner {
     margin-top: 2em;
   }
-  
-
   @media only screen and (min-width : 550px)
 {  
   .map{
@@ -417,17 +389,32 @@ $backgroundhover: #f5edff;
     height: 200px;
     margin-top: 4em;
   }
-  .menilmontant{
-    margin-left: -8em;
-  }
-  .menilmontant-img, .charonne-img,.cite-rouge-img, .folie-mericourt-img {
+   .menilmontant-img, .charonne-img,.cite-rouge-img, .folie-mericourt-img {
     width: 200px;
     height: 125px;
+  }
+  .menilmontant{
+    margin-left: -8em;
   }
   .menilmontant-title{
     position: relative;
     margin-top: -1.5em;
     left: -15%;
+  }
+  .menilmontant-place {
+    position: relative;
+    left: -26%;
+    top: -116%;
+  }
+  .menilmontant-heart{
+    position: relative;
+    top: -32em;
+    margin-left: 95%;
+  }
+  .menilmontant-heart2{
+    position: relative;
+    top: -46.45em;
+    margin-left: 95%;
   }
   .charonne-title{
     position: relative;
@@ -439,26 +426,31 @@ $backgroundhover: #f5edff;
     left: -32%;
     margin-top: -17em;
   }
+  .charonne-heart{
+    position: relative;
+    top: -17.25em;
+    margin-left: 90%; 
+  }
+  .charonne-heart2
+  {
+    position: relative;
+    left: 35%;
+    top: -31.7em;
+  }
   .cite-rouge-title
   {
     position: relative;
     margin-left: -7.5em;
     margin-top: 0.5em;
   }
-
-  .folie-mericourt-title{
-    position: relative;
-    margin-left: -6em;
-    margin-top: 0.5em;
-  }
-  .menilmontant-place {
-    position: relative;
-    left: -26%;
-    top: -116%;
-  }
   .cite-rouge-place{
     position: relative;
     left: -29%;
+    margin-top: 0.5em;
+  }
+  .folie-mericourt-title{
+    position: relative;
+    margin-left: -6em;
     margin-top: 0.5em;
   }
   .folie-mericourt-place{
@@ -471,31 +463,10 @@ $backgroundhover: #f5edff;
     right: -30%;
     top: -65%;
   }
-  .menilmontant-heart{
-    position: relative;
-    top: -32em;
-    margin-left: 95%;
-  }
-  .menilmontant-heart2{
-    position: relative;
-    top: -46.45em;
-    margin-left: 95%;
-  }
   .cite-rouge-heart, .folie-mericourt-heart{
     position: relative;
     top: -17.5em;
     margin-left: 90%; 
-  }
-  .charonne-heart{
-    position: relative;
-    top: -17.25em;
-    margin-left: 90%; 
-  }
-  .charonne-heart2
-  {
-    position: relative;
-    left: 35%;
-    top: -31.7em;
   }
   .cite-rouge-heart2, .folie-mericourt-heart2{
     position: relative;
@@ -525,9 +496,6 @@ $backgroundhover: #f5edff;
     height: 200px;
     margin-top: 4em;
   }
-  .menilmontant{
-    margin-left: -8em;
-  }
   .menilmontant-img, .charonne-img,.cite-rouge-img, .folie-mericourt-img {
     width: 400px;
     height: 125px;
@@ -542,6 +510,19 @@ $backgroundhover: #f5edff;
     left: -37%;
     top: -116%;
   }
+  .menilmontant-heart{
+    position: relative;
+    top: -32em;
+    margin-left: 105%;
+  }
+  .menilmontant-heart2{
+    position: relative;
+    top: -46.45em;
+    margin-left: 105%;
+  }
+  .menilmontant{
+    margin-left: -8em;
+  }
   .charonne-title{
     position: relative;
     left: -8.5em;
@@ -551,6 +532,22 @@ $backgroundhover: #f5edff;
     position: relative;
     left: -41%;
     margin-top: -17em;
+  }
+  .charonne-heart{
+    position: relative;
+    top: -17.25em;
+    margin-left: 104%; 
+  }
+  .charonne-heart2
+  {
+    position: relative;
+    left: 42%;
+    top: -31.7em;
+  }
+  .menilmontant-new, .charonne-new{
+    position: relative;
+    right: -40%;
+    top: -61%;
   }
   .cite-rouge-title
   {
@@ -573,36 +570,10 @@ $backgroundhover: #f5edff;
     left: -36%;
     margin-top: 0.5em;
   }
-  .menilmontant-new, .charonne-new{
-    position: relative;
-    right: -40%;
-    top: -61%;
-  }
-  .menilmontant-heart{
-    position: relative;
-    top: -32em;
-    margin-left: 105%;
-  }
-  .charonne-heart{
-    position: relative;
-    top: -17.25em;
-    margin-left: 104%; 
-  }
   .cite-rouge-heart, .folie-mericourt-heart{
     position: relative;
     top: -17.5em;
     margin-left: 106%;
-  }
-  .menilmontant-heart2{
-    position: relative;
-    top: -46.45em;
-    margin-left: 105%;
-  }
-  .charonne-heart2
-  {
-    position: relative;
-    left: 42%;
-    top: -31.7em;
   }
   .cite-rouge-heart2, .folie-mericourt-heart2{
     position: relative;
